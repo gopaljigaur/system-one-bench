@@ -46,7 +46,7 @@ in `results/`.
 
 | system | params | accuracy | macro F1 | ECE | p50 ms | p95 ms | failures |
 |---|---|---|---|---|---|---|---|
-| Laya 0.4.7 (laya-serve) | 421M | **0.953** | 0.953 | **0.028** | 160.9 | 243.4 | 0 |
+| Laya 0.4.7 (laya-serve, router) | 421M | **0.953** | 0.953 | **0.028** | 160.9 | 243.4 | 0 |
 | Laya multilingual (MLX) | 322M | 0.920 | 0.921 | 0.072 | **17.1** | 24.0 | 0 |
 | Von 1.3 | 395M | 0.913 | 0.914 | 0.230 | 196.2 | 399.4 | 0 |
 | ms-marco MiniLM reranker | 22.7M | 0.393 | 0.326 | 0.078 | 15.6 | 24.0 | 0 |
@@ -58,7 +58,7 @@ in `results/`.
 |---|---|---|---|---|---|---|---|
 | Von 1.3 | 395M | **0.847** | 0.846 | **0.024** | 276.2 | 387.4 | 0 |
 | Llama 3.2 1B via ollama | 1.2B | 0.840 | 0.781 | 0.240 | 634.6 | 3694.0 | **125** |
-| Laya 0.4.7 (laya-serve) | 421M | 0.807 | 0.805 | 0.058 | 113.5 | 149.0 | 0 |
+| Laya 0.4.7 (laya-serve, router) | 421M | 0.807 | 0.805 | 0.058 | 113.5 | 149.0 | 0 |
 | Laya multilingual (MLX) | 322M | 0.527 | 0.425 | 0.373 | **12.3** | 17.3 | 0 |
 | ms-marco MiniLM reranker | 22.7M | 0.473 | 0.421 | 0.448 | 9.1 | 13.8 | 0 |
 
@@ -84,6 +84,15 @@ checkpoint scores 0.527 on yes/no, barely above a coin, while the 421M English
 one scores 0.807. Both are Laya. Anything defaulting to the multilingual
 checkpoint for yes/no questions is close to guessing.
 
+**laya-serve picks the checkpoint per request, and sometimes picks wrong.**
+`laya-serve` runs Laya's `Router`, which reads the state's language and chooses,
+and the client sends no explicit model. On sst2 it sent 143 of 150 rows to the
+English checkpoint, which answered them at 0.832, and 7 to the multilingual one,
+which got 2 of those 7 right. Those seven rows cost the whole row 2.5 points.
+They are plainly English: `cool ?`, `lovely and poignant .`, `a smart , witty
+follow-up .`. On ag_news, whose stories are several sentences long, all 150 went
+to English. Name the checkpoint if you care which one answers.
+
 **A 1B chat model cannot do this.** Llama 3.2 1B returned no parseable typed
 answer in 150 attempts at a four-way choice, and failed 125 of 150 yes/no
 questions, though it was right on 21 of the 25 that came back. The failures are
@@ -94,7 +103,9 @@ all, at a 256 token cap.
 four classes where guessing gets 0.25. It emits one relevance score and was
 never a classifier, and it is here to show what that costs.
 
-### A defect found while measuring
+### Defects found while measuring
+
+#### A yes/no question containing "positive"
 
 Laya returns exactly `0.000` with `confidence: 1.0` for any yes/no question
 containing the word "positive", whatever the state and whatever the question
@@ -116,6 +127,26 @@ curl -s -X POST localhost:8000/v1/systemone -H 'Content-Type: application/json' 
 The sst2 task here asks "good" for that reason, which is noted in
 `harness/tasks.py`. The first version of this benchmark asked "positive" and
 scored Laya at 0.500, which was measuring the defect.
+
+It is not a quirk of one build. It reproduces on laya 0.3.28 with the English
+checkpoint at revision `55cf4c4e`, loaded in process on CPU, as well as on 0.4.7
+through `laya-serve`.
+
+#### The published checkpoint ships a temperature the library rejects
+
+Loading `convaiinnovations/laya` prints:
+
+```
+RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5];
+using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as
+uncalibrated.
+```
+
+`rl_agent_config.json` sets `"choice:11+": 0.1006`, below the `[0.5, 5]` the
+library accepts, so it is clamped to 0.5 and the confidence of any choice
+question with 11 or more options is uncalibrated. Nothing here asks one, so no
+number in the tables is affected. A load that prints this still answers, and a
+readiness check that only asks for an answer will not see it.
 
 ## Running it
 
