@@ -57,7 +57,9 @@ TASKS: dict[str, Task] = {
         split="validation",
         text_column="sentence",
         labels=["negative", "positive"],
-        question="Is the sentiment of this review positive?",
+        # Deliberately avoids the word "positive": laya returns exactly 0.000 with
+        # confidence 1.0 for any yes/no question containing it, whatever the state.
+        question="Is the sentiment of this review good?",
         kind="noul",
         source="https://huggingface.co/datasets/stanfordnlp/sst2",
     ),
