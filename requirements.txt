@@ -1,0 +1,10 @@
+# The client. It speaks every wire format the systems here use, so the harness
+# does not reimplement any of them.
+pydecide>=0.2.5
+
+# Datasets for the labelled tasks.
+datasets>=3
+
+# Local models. Install only what you intend to measure.
+# pydecide[mlx]   laya on Apple Silicon
+# pydecide[st]    sentence-transformers cross-encoders
