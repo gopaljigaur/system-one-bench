@@ -72,7 +72,7 @@ that protocol. Anything else needs a backend in the client instead.
   numbers are comparable to each other within one run and not to anyone else's.
 - A model that scores badly here may have been trained for something else
   entirely. The reranker in the table is in that position on purpose, as a
-  floor rather than a competitor.
+  floor, not a competitor.
 - No system was tuned, prompted or configured beyond its defaults. A model
   that needs a particular prompt to do well will look worse here than it is.
 
