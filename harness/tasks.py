@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import random
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 
 SEED = 20261015
@@ -15,10 +15,11 @@ class Task:
     dataset: str
     split: str
     text_column: str
-    labels: Sequence[str]
+    classes: Sequence[str]
     question: str
     kind: str  # "choice" or "noul"
     source: str
+    labels: Mapping[str, str] | None = None  # noul only: names for the two options
 
     def rows(self, n: int, warmup: int) -> list[tuple[str, int]]:
         from datasets import load_dataset
@@ -36,8 +37,8 @@ class Task:
         from decide.types import Choice, Noul
 
         if self.kind == "choice":
-            return {"label": Choice(self.question, list(self.labels))}
-        return {"label": Noul(self.question)}
+            return {"label": Choice(self.question, list(self.classes))}
+        return {"label": Noul(self.question, labels=self.labels)}
 
 
 TASKS: dict[str, Task] = {
@@ -46,7 +47,7 @@ TASKS: dict[str, Task] = {
         dataset="fancyzhx/ag_news",
         split="test",
         text_column="text",
-        labels=["World", "Sports", "Business", "Sci/Tech"],
+        classes=["World", "Sports", "Business", "Sci/Tech"],
         question="Which section of the paper does this story belong to?",
         kind="choice",
         source="https://huggingface.co/datasets/fancyzhx/ag_news",
@@ -56,10 +57,24 @@ TASKS: dict[str, Task] = {
         dataset="stanfordnlp/sst2",
         split="validation",
         text_column="sentence",
-        labels=["negative", "positive"],
-        # Deliberately avoids the word "positive": laya returns exactly 0.000 with
-        # confidence 1.0 for any yes/no question containing it, whatever the state.
+        classes=["negative", "positive"],
+        # Avoids the word "positive", which laya answers with a constant 0.000 at
+        # confidence 1.0 unless the two options are named. sst2_named asks it that way.
         question="Is the sentiment of this review good?",
+        kind="noul",
+        source="https://huggingface.co/datasets/stanfordnlp/sst2",
+    ),
+    "sst2_named": Task(
+        name="sst2_named",
+        dataset="stanfordnlp/sst2",
+        split="validation",
+        text_column="sentence",
+        classes=["negative", "positive"],
+        # The same rows as sst2, asked the natural way, with the two options named
+        # so the word "positive" does not collapse the answer. Backends that cannot
+        # carry the names refuse the question rather than drop them.
+        question="Is the sentiment of this review positive?",
+        labels={"true": "positive", "false": "negative"},
         kind="noul",
         source="https://huggingface.co/datasets/stanfordnlp/sst2",
     ),

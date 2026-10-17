@@ -33,11 +33,16 @@ def _server(base_url: str) -> Callable[[], object]:
     return build
 
 
-def _laya_mlx() -> object:
-    from decide import Client
-    from decide.backends.laya_mlx import LayaMLXBackend
+def _laya_mlx(repo: str) -> Callable[[], object]:
+    """Pinned by repo id: pydecide's own default has changed once already."""
 
-    return Client([LayaMLXBackend()])
+    def build() -> object:
+        from decide import Client
+        from decide.backends.laya_mlx import LayaMLXBackend
+
+        return Client([LayaMLXBackend(model=repo)])
+
+    return build
 
 
 def _crossencoder() -> object:
@@ -70,7 +75,7 @@ def _ollama(model: str) -> Callable[[], object]:
 SYSTEMS: dict[str, System] = {
     "von": System(
         key="von",
-        label="Von 1.3",
+        label="Von 1.3.7",
         kind="server",
         params="395M",
         licence="Apache-2.0",
@@ -80,7 +85,7 @@ SYSTEMS: dict[str, System] = {
     ),
     "laya-serve": System(
         key="laya-serve",
-        label="Laya 0.4.7 (laya-serve)",
+        label="Laya 0.4.9 (laya-serve)",
         kind="server",
         params="421M",
         licence="Apache-2.0",
@@ -90,12 +95,32 @@ SYSTEMS: dict[str, System] = {
     ),
     "laya-mlx": System(
         key="laya-mlx",
+        label="Laya English (MLX)",
+        kind="local",
+        params="421M",
+        licence="Apache-2.0",
+        source="https://huggingface.co/aac6fef/laya-mlx",
+        build=_laya_mlx("aac6fef/laya-mlx"),
+        note="in process on Apple Silicon",
+    ),
+    "laya-mlx-typed": System(
+        key="laya-mlx-typed",
+        label="Laya typed-decisions (MLX)",
+        kind="local",
+        params="421M",
+        licence="Apache-2.0",
+        source="https://huggingface.co/aac6fef/laya-typed-decisions-mlx",
+        build=_laya_mlx("aac6fef/laya-typed-decisions-mlx"),
+        note="in process on Apple Silicon",
+    ),
+    "laya-mlx-multilingual": System(
+        key="laya-mlx-multilingual",
         label="Laya multilingual (MLX)",
         kind="local",
         params="322M",
         licence="Apache-2.0",
         source="https://huggingface.co/aac6fef/laya-multilingual-mlx",
-        build=_laya_mlx,
+        build=_laya_mlx("aac6fef/laya-multilingual-mlx"),
         note="in process on Apple Silicon",
     ),
     "crossencoder": System(

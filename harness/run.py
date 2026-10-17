@@ -25,7 +25,7 @@ def predict(task, answer) -> tuple[int, float]:
     from decide.types import ChoiceAnswer
 
     if isinstance(answer, ChoiceAnswer):
-        return list(task.labels).index(answer.choice), max(answer.probabilities.values())
+        return list(task.classes).index(answer.choice), max(answer.probabilities.values())
     positive = answer.noul >= 0.5
     return (1 if positive else 0), max(answer.noul, 1 - answer.noul)
 
@@ -91,7 +91,7 @@ def main() -> None:
             print(f"==> {task_name} / {key}", flush=True)
             started = time.perf_counter()
             items = run(task, system, args.n)
-            summary = summarize(items, len(task.labels))
+            summary = summarize(items, len(task.classes))
             summary |= {
                 "task": task_name,
                 "system": key,

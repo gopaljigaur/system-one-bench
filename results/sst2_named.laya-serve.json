@@ -1,0 +1,1070 @@
+{
+  "summary": {
+    "rows": 150,
+    "answered": 150,
+    "failures": 0,
+    "accuracy": 0.8733333333333333,
+    "macro_f1": 0.8733277034534868,
+    "ece": 0.058810666666666664,
+    "latency_ms_p50": 108.90533309429884,
+    "latency_ms_p95": 135.93583297915757,
+    "latency_ms_mean": 110.5887794525673,
+    "task": "sst2_named",
+    "system": "laya-serve",
+    "label": "Laya 0.4.9 (laya-serve)",
+    "params": "421M",
+    "wall_seconds": 18.3
+  },
+  "items": [
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9652,
+      "latency_ms": 106.04075016453862,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9935,
+      "latency_ms": 109.70966704189777,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9828,
+      "latency_ms": 106.69504199177027,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9824,
+      "latency_ms": 108.18970901891589,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.8381,
+      "latency_ms": 107.43866697885096,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.8708,
+      "latency_ms": 106.73095798119903,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9161,
+      "latency_ms": 105.1683749537915,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 116.88337498344481,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.5187,
+      "latency_ms": 107.69937513396144,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9719,
+      "latency_ms": 105.73966708034277,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9777,
+      "latency_ms": 106.4376668073237,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9819,
+      "latency_ms": 132.3304590769112,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.7912,
+      "latency_ms": 129.9173329025507,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9898,
+      "latency_ms": 107.52950003370643,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9076,
+      "latency_ms": 128.93475010059774,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.8547,
+      "latency_ms": 39.6395418792963,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 106.09095916152,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9545,
+      "latency_ms": 128.95483383908868,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.8698,
+      "latency_ms": 108.37758309207857,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9984,
+      "latency_ms": 43.864750070497394,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9823,
+      "latency_ms": 152.54012518562376,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 1,
+      "confidence": 0.5731,
+      "latency_ms": 139.8498748894781,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9802,
+      "latency_ms": 119.75808395072818,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.8641,
+      "latency_ms": 134.8429168574512,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.6612,
+      "latency_ms": 43.06595912203193,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9995,
+      "latency_ms": 138.9625419396907,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.7878000000000001,
+      "latency_ms": 43.36224985308945,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9997,
+      "latency_ms": 114.4600419793278,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9915,
+      "latency_ms": 111.74408299848437,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9901,
+      "latency_ms": 108.9541669934988,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.8434,
+      "latency_ms": 108.61837514676154,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9806,
+      "latency_ms": 108.32216707058251,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.969,
+      "latency_ms": 112.45695920661092,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 115.87487510405481,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9937,
+      "latency_ms": 135.5754160322249,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9984,
+      "latency_ms": 111.37891607359052,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.9222,
+      "latency_ms": 137.99466704949737,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 108.6744589265436,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9815,
+      "latency_ms": 108.06004120968282,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.7871,
+      "latency_ms": 112.75833402760327,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9484,
+      "latency_ms": 135.22241613827646,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.9246,
+      "latency_ms": 131.36337511241436,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9785,
+      "latency_ms": 114.81304210610688,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.8748,
+      "latency_ms": 109.07037509605289,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9683,
+      "latency_ms": 110.52066716365516,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 135.6524999719113,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.5797,
+      "latency_ms": 121.70225009322166,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9774,
+      "latency_ms": 107.05016693100333,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9917,
+      "latency_ms": 108.90533309429884,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9882,
+      "latency_ms": 112.14641598053277,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9921,
+      "latency_ms": 138.41195800341666,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9965,
+      "latency_ms": 129.54175006598234,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9628,
+      "latency_ms": 118.10679081827402,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 1,
+      "confidence": 0.9488,
+      "latency_ms": 117.24312487058342,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9858,
+      "latency_ms": 129.9454579129815,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9954,
+      "latency_ms": 108.57845889404416,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9892,
+      "latency_ms": 107.13479202240705,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9957,
+      "latency_ms": 135.93583297915757,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.7345,
+      "latency_ms": 149.97916715219617,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9494,
+      "latency_ms": 107.95283294282854,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 1,
+      "confidence": 0.63,
+      "latency_ms": 118.2731669396162,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 131.5347501076758,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.7086,
+      "latency_ms": 109.89725007675588,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9561,
+      "latency_ms": 113.58541599474847,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 113.79029089584947,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9865,
+      "latency_ms": 108.0297080334276,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9913,
+      "latency_ms": 108.39666612446308,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9867,
+      "latency_ms": 111.23462487012148,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9895,
+      "latency_ms": 111.52545781806111,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.965,
+      "latency_ms": 113.61054214648902,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9776,
+      "latency_ms": 114.24670903943479,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9558,
+      "latency_ms": 117.93283303268254,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9591,
+      "latency_ms": 128.91983287408948,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9852,
+      "latency_ms": 107.15370811522007,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.6498999999999999,
+      "latency_ms": 115.55920890532434,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9946,
+      "latency_ms": 104.62458292022347,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9875,
+      "latency_ms": 110.58637499809265,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9826,
+      "latency_ms": 112.9627909976989,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.6475,
+      "latency_ms": 113.066750112921,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.8915,
+      "latency_ms": 106.69812513515353,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9634,
+      "latency_ms": 109.69737498089671,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9894,
+      "latency_ms": 107.48183284886181,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.6102000000000001,
+      "latency_ms": 109.76241598837078,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.9864,
+      "latency_ms": 105.4701660759747,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.7572,
+      "latency_ms": 115.38462503813207,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9013,
+      "latency_ms": 110.29433319345117,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9753000000000001,
+      "latency_ms": 106.83566611260176,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9998,
+      "latency_ms": 131.6169579513371,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9273,
+      "latency_ms": 108.33870898932219,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.939,
+      "latency_ms": 133.20891582407057,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9912,
+      "latency_ms": 103.87616604566574,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9831,
+      "latency_ms": 105.66541692242026,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9975,
+      "latency_ms": 102.54383296705782,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.5959,
+      "latency_ms": 103.38137508369982,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9955,
+      "latency_ms": 104.28983299061656,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9307,
+      "latency_ms": 110.80995807424188,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.8829,
+      "latency_ms": 105.39883305318654,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9943,
+      "latency_ms": 108.04412490688264,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9949,
+      "latency_ms": 112.95012501068413,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.9532,
+      "latency_ms": 41.50191601365805,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 1,
+      "confidence": 0.6222,
+      "latency_ms": 101.18395905010402,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9988,
+      "latency_ms": 110.8937500976026,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 106.03345814161003,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9871,
+      "latency_ms": 128.35912499576807,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.5153,
+      "latency_ms": 123.36070905439556,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9959,
+      "latency_ms": 105.62237491831183,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9079,
+      "latency_ms": 106.46499996073544,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9875,
+      "latency_ms": 100.88512510992587,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9812,
+      "latency_ms": 127.24637519568205,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9932,
+      "latency_ms": 127.21912492997944,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.97,
+      "latency_ms": 103.08716585859656,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9928,
+      "latency_ms": 44.48516690172255,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 1.0,
+      "latency_ms": 101.9385838881135,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.9974,
+      "latency_ms": 113.47958305850625,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.9174,
+      "latency_ms": 108.43058302998543,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9371,
+      "latency_ms": 128.7521249614656,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.8906000000000001,
+      "latency_ms": 112.6681671012193,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9332,
+      "latency_ms": 105.15212500467896,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9998,
+      "latency_ms": 105.29104201123118,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9879,
+      "latency_ms": 103.24608301743865,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 0,
+      "confidence": 0.8968,
+      "latency_ms": 102.88566700182855,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9846,
+      "latency_ms": 104.84799998812377,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9939,
+      "latency_ms": 103.59579208306968,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9849,
+      "latency_ms": 111.56929098069668,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9931,
+      "latency_ms": 108.93450002186,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.6709,
+      "latency_ms": 112.5832088291645,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9582,
+      "latency_ms": 108.50783321075141,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9733,
+      "latency_ms": 103.00183296203613,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9881,
+      "latency_ms": 105.83925014361739,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9768,
+      "latency_ms": 130.36379194818437,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9654,
+      "latency_ms": 128.84170794859529,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.8983,
+      "latency_ms": 102.36095893196762,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.8961,
+      "latency_ms": 38.96379191428423,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9961,
+      "latency_ms": 102.14062500745058,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9978,
+      "latency_ms": 103.22979185730219,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9997,
+      "latency_ms": 104.99670798890293,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9628,
+      "latency_ms": 108.37062494829297,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9838,
+      "latency_ms": 108.5687919985503,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9616,
+      "latency_ms": 103.07416692376137,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.9999,
+      "latency_ms": 131.2177919317037,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9967,
+      "latency_ms": 105.96454096958041,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.981,
+      "latency_ms": 104.96670892462134,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 1,
+      "confidence": 0.8203,
+      "latency_ms": 101.47633403539658,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9931,
+      "latency_ms": 105.90908280573785,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9418,
+      "latency_ms": 100.8417911361903,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9729,
+      "latency_ms": 100.7676247972995,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9411,
+      "latency_ms": 123.82162502035499,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9978,
+      "latency_ms": 137.29062490165234,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9879,
+      "latency_ms": 102.34270803630352,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": 0,
+      "confidence": 0.9912,
+      "latency_ms": 100.15683388337493,
+      "error": null
+    }
+  ]
+}
