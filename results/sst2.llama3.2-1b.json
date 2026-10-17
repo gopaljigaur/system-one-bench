@@ -6,1064 +6,1064 @@
     "accuracy": 0.84,
     "macro_f1": 0.7807017543859649,
     "ece": 0.23999999999999996,
-    "latency_ms_p50": 514.2687908373773,
-    "latency_ms_p95": 2807.8024580609053,
-    "latency_ms_mean": 959.6102496484915,
+    "latency_ms_p50": 551.8241249956191,
+    "latency_ms_p95": 3066.449499921873,
+    "latency_ms_mean": 1043.0152116467555,
     "task": "sst2",
     "system": "llama3.2-1b",
     "label": "Llama 3.2 1B via ollama",
     "params": "1.2B",
-    "wall_seconds": 146.8
+    "wall_seconds": 159.4
   },
   "items": [
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 442.33474996872246,
+      "latency_ms": 494.5273329503834,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 561.7597498930991,
+      "latency_ms": 640.599540900439,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 6110.143875004724,
+      "latency_ms": 6858.805541880429,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 430.1969159860164,
+      "latency_ms": 452.7492499910295,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 513.4505410678685,
+      "latency_ms": 546.4219579007477,
       "error": null
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 515.3897081036121,
+      "latency_ms": 551.8241249956191,
       "error": null
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 512.8352921456099,
-      "error": null
-    },
-    {
-      "gold": 0,
-      "predicted": null,
-      "confidence": null,
-      "latency_ms": 1114.3491249531507,
-      "error": "AllBackendsFailed"
-    },
-    {
-      "gold": 1,
-      "predicted": null,
-      "confidence": null,
-      "latency_ms": 421.5094998944551,
-      "error": "AllBackendsFailed"
-    },
-    {
-      "gold": 1,
-      "predicted": null,
-      "confidence": null,
-      "latency_ms": 436.6477921139449,
-      "error": "AllBackendsFailed"
-    },
-    {
-      "gold": 1,
-      "predicted": 1,
-      "confidence": 0.5,
-      "latency_ms": 514.2267912160605,
+      "latency_ms": 556.5297920256853,
       "error": null
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 438.74124996364117,
+      "latency_ms": 1197.43866706267,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 394.47154221124947,
+      "latency_ms": 445.8447080105543,
       "error": "AllBackendsFailed"
     },
     {
-      "gold": 0,
+      "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 6087.8327081445605,
+      "latency_ms": 483.2702921703458,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 541.1815831903368,
+      "latency_ms": 540.8692909404635,
+      "error": null
+    },
+    {
+      "gold": 0,
+      "predicted": null,
+      "confidence": null,
+      "latency_ms": 493.27683402225375,
+      "error": "AllBackendsFailed"
+    },
+    {
+      "gold": 1,
+      "predicted": null,
+      "confidence": null,
+      "latency_ms": 438.30354092642665,
+      "error": "AllBackendsFailed"
+    },
+    {
+      "gold": 0,
+      "predicted": null,
+      "confidence": null,
+      "latency_ms": 6595.735165989026,
+      "error": "AllBackendsFailed"
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.5,
+      "latency_ms": 516.4570838678628,
       "error": null
     },
     {
       "gold": 0,
       "predicted": 0,
       "confidence": 0.8,
-      "latency_ms": 493.16254118457437,
+      "latency_ms": 501.8729171715677,
       "error": null
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1868.4321250766516,
+      "latency_ms": 1972.476082853973,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1143.1352910585701,
+      "latency_ms": 1177.671791985631,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 501.70625001192093,
+      "latency_ms": 522.183750057593,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1127.9420829378068,
+      "latency_ms": 1180.2152500022203,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 434.0411659795791,
+      "latency_ms": 446.03520818054676,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 407.4632078409195,
+      "latency_ms": 429.5121671166271,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 677.493124967441,
+      "latency_ms": 718.2829158846289,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 481.32304195314646,
+      "latency_ms": 541.9311670120806,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 657.4170000385493,
+      "latency_ms": 752.8453331906348,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": 0,
       "confidence": 0.8,
-      "latency_ms": 500.5694169085473,
+      "latency_ms": 547.9171669576317,
       "error": null
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.8,
-      "latency_ms": 2807.8024580609053,
+      "latency_ms": 3066.449499921873,
       "error": null
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1051.9998748786747,
+      "latency_ms": 1145.3172080218792,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 425.9020001627505,
+      "latency_ms": 505.2821671124548,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 540.972915943712,
+      "latency_ms": 617.781792068854,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1143.6554579995573,
+      "latency_ms": 1290.2735827956349,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 413.09091611765325,
+      "latency_ms": 471.7248328961432,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 250.82541606388986,
+      "latency_ms": 282.99824986606836,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 3711.3339588977396,
+      "latency_ms": 4151.835915865377,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 785.9682911075652,
+      "latency_ms": 878.5740828607231,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1066.3294580299407,
+      "latency_ms": 1211.2720420118421,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1128.914332948625,
+      "latency_ms": 1258.6336659733206,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": 0,
       "confidence": 0.8,
-      "latency_ms": 492.817125050351,
+      "latency_ms": 555.1394999492913,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 871.7286251485348,
+      "latency_ms": 969.2431250587106,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 557.2556669358164,
+      "latency_ms": 619.4819170050323,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 418.35545911453664,
+      "latency_ms": 483.7245000526309,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 514.2687908373773,
+      "latency_ms": 595.9825001191348,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 419.63066696189344,
+      "latency_ms": 467.20604109577835,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 6003.381374990568,
+      "latency_ms": 6618.320291861892,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1217.0249589253217,
+      "latency_ms": 1446.7628339771181,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1073.7082920968533,
+      "latency_ms": 1262.1557500679046,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1151.5759171452373,
+      "latency_ms": 1365.7529999036342,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 399.7848329599947,
+      "latency_ms": 464.28516600281,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 432.80933308415115,
+      "latency_ms": 489.862458081916,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 404.0353330783546,
+      "latency_ms": 454.91316611878574,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 417.22187492996454,
+      "latency_ms": 487.31274995952845,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 418.86641713790596,
+      "latency_ms": 486.0072920564562,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 551.3727080542594,
+      "latency_ms": 607.7324999496341,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 881.2276248354465,
+      "latency_ms": 963.9862501062453,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1495.0753750745207,
+      "latency_ms": 1714.0395420137793,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 2008.3492919802666,
+      "latency_ms": 2359.5466669648886,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 410.22754088044167,
+      "latency_ms": 474.1214578971267,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1940.6923328060657,
+      "latency_ms": 2165.0862500537187,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 908.2399578765035,
+      "latency_ms": 1033.307832898572,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 814.0834998339415,
+      "latency_ms": 932.4705409817398,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 878.5882079973817,
+      "latency_ms": 1002.2889170795679,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1723.8558330573142,
+      "latency_ms": 1925.3653751220554,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 279.1962078772485,
+      "latency_ms": 309.2958328779787,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 413.14950003288686,
+      "latency_ms": 489.3377919215709,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 271.5410841628909,
+      "latency_ms": 313.3046249859035,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1233.46274998039,
+      "latency_ms": 1444.4982500281185,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1550.5664581432939,
+      "latency_ms": 1867.5569999031723,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 416.71695886179805,
+      "latency_ms": 506.7075830884278,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 417.74991690181196,
+      "latency_ms": 506.2928751576692,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 415.7456250395626,
+      "latency_ms": 498.85779106989503,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1887.627457967028,
+      "latency_ms": 2087.462125113234,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 886.3882499281317,
+      "latency_ms": 958.3352080080658,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 441.2683330010623,
+      "latency_ms": 479.14283303543925,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 440.72383316233754,
+      "latency_ms": 488.82704111747444,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 412.42800001055,
+      "latency_ms": 464.45412491448224,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 497.0878749154508,
+      "latency_ms": 532.7947500627488,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1517.7942079026252,
+      "latency_ms": 1655.1250000484288,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 570.7937909755856,
+      "latency_ms": 613.5206671897322,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 446.15129195153713,
+      "latency_ms": 489.2882499843836,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 417.15579107403755,
+      "latency_ms": 452.5289158336818,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1118.0147079285234,
+      "latency_ms": 1241.0251658875495,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 418.54866687208414,
+      "latency_ms": 460.29087505303323,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 412.3705418314785,
+      "latency_ms": 457.9777498729527,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 497.96475004404783,
+      "latency_ms": 555.327125126496,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 442.9403329268098,
+      "latency_ms": 477.96520800329745,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1158.5947501007468,
+      "latency_ms": 1250.4432080313563,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 518.894791835919,
+      "latency_ms": 563.1231248844415,
       "error": null
     },
     {
       "gold": 0,
       "predicted": 0,
       "confidence": 0.8,
-      "latency_ms": 514.4382920116186,
+      "latency_ms": 573.3235001098365,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 418.02258300594985,
+      "latency_ms": 474.1316249128431,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.8,
-      "latency_ms": 519.7367500513792,
+      "latency_ms": 576.8160410225391,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 6087.927083019167,
+      "latency_ms": 6980.711832875386,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1708.9560418389738,
+      "latency_ms": 1847.9468750301749,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 440.288458019495,
+      "latency_ms": 507.18845915980637,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 997.3710000049323,
+      "latency_ms": 1121.1994169279933,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 563.6409169528633,
+      "latency_ms": 613.1933329161257,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 399.1302498616278,
+      "latency_ms": 439.59045805968344,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 6107.220833888277,
+      "latency_ms": 6803.098040865734,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 423.24991687200963,
+      "latency_ms": 480.33479205332696,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 2160.8069171197712,
+      "latency_ms": 2502.158540999517,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 1686.2109578214586,
+      "latency_ms": 1967.5791249610484,
       "error": null
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 424.55454100854695,
+      "latency_ms": 493.22208296507597,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 418.83508302271366,
+      "latency_ms": 488.12158312648535,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 909.413332818076,
+      "latency_ms": 1111.132875084877,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 442.6850420422852,
+      "latency_ms": 486.29241716116667,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1373.9872090518475,
+      "latency_ms": 1495.902125025168,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 559.3809999991208,
-      "error": "AllBackendsFailed"
-    },
-    {
-      "gold": 1,
-      "predicted": 1,
-      "confidence": 0.5,
-      "latency_ms": 515.713291009888,
-      "error": null
-    },
-    {
-      "gold": 1,
-      "predicted": null,
-      "confidence": null,
-      "latency_ms": 890.6987090595067,
+      "latency_ms": 688.9195421244949,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 515.1529160793871,
+      "latency_ms": 568.0343338754028,
+      "error": null
+    },
+    {
+      "gold": 1,
+      "predicted": null,
+      "confidence": null,
+      "latency_ms": 980.4935839492828,
+      "error": "AllBackendsFailed"
+    },
+    {
+      "gold": 1,
+      "predicted": 1,
+      "confidence": 0.5,
+      "latency_ms": 563.7534169945866,
       "error": null
     },
     {
       "gold": 0,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 525.1227079425007,
+      "latency_ms": 609.5462499652058,
       "error": null
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1634.7116669639945,
+      "latency_ms": 1892.806624993682,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 494.0607079770416,
+      "latency_ms": 550.8966671768576,
       "error": null
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 275.9301250334829,
+      "latency_ms": 304.1233338881284,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.9,
-      "latency_ms": 519.1120840609074,
+      "latency_ms": 530.7612910401076,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 446.805999847129,
+      "latency_ms": 406.1309169046581,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 513.966416940093,
+      "latency_ms": 470.42629192583263,
       "error": null
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1534.0097909793258,
+      "latency_ms": 1408.5187080781907,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1406.4712079707533,
+      "latency_ms": 1276.8946660216898,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 758.701000129804,
+      "latency_ms": 738.1456249859184,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 405.41954105719924,
+      "latency_ms": 397.6328750140965,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 438.6276670265943,
+      "latency_ms": 420.80608382821083,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.8,
-      "latency_ms": 509.7858749795705,
+      "latency_ms": 528.4363341052085,
       "error": null
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1082.0002080872655,
+      "latency_ms": 1049.5797079056501,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 410.6767501216382,
+      "latency_ms": 412.9443331621587,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 557.1752910036594,
+      "latency_ms": 559.7895418759435,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1167.2052501235157,
+      "latency_ms": 1231.3686669804156,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 558.3146251738071,
+      "latency_ms": 594.2372500430793,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 397.5830408744514,
+      "latency_ms": 410.32758401706815,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1290.2744580060244,
+      "latency_ms": 1408.3241671323776,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 6112.048709066585,
+      "latency_ms": 6385.573834180832,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 280.36191617138684,
+      "latency_ms": 262.01704097911716,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 498.6024999525398,
+      "latency_ms": 462.25066715851426,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 260.37641684524715,
+      "latency_ms": 245.04737509414554,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 404.1255419142544,
+      "latency_ms": 354.90512498654425,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 447.2023749258369,
+      "latency_ms": 392.3779169563204,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 447.2764579113573,
+      "latency_ms": 402.38816593773663,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1845.9586251992732,
+      "latency_ms": 1688.5950830765069,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 944.6601669769734,
+      "latency_ms": 866.9543750584126,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 453.3236250281334,
+      "latency_ms": 401.714124949649,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 1,
       "predicted": 1,
       "confidence": 0.5,
-      "latency_ms": 518.3506670873612,
+      "latency_ms": 466.2010420579463,
       "error": null
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 1084.4296670984477,
+      "latency_ms": 932.4229161720723,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 420.79950007610023,
+      "latency_ms": 361.13262502476573,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 440.30220806598663,
+      "latency_ms": 384.5381250139326,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 396.5893341228366,
+      "latency_ms": 339.7474999073893,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 397.41387497633696,
+      "latency_ms": 343.97275000810623,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 424.0534158889204,
+      "latency_ms": 363.55833406560123,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 278.5994578152895,
+      "latency_ms": 242.87087516859174,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 466.0302500706166,
+      "latency_ms": 412.835625000298,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 422.47075005434453,
+      "latency_ms": 363.98008395917714,
       "error": "AllBackendsFailed"
     },
     {
       "gold": 0,
       "predicted": null,
       "confidence": null,
-      "latency_ms": 253.58208292163908,
+      "latency_ms": 223.03858399391174,
       "error": "AllBackendsFailed"
     }
   ]

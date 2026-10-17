@@ -22,12 +22,20 @@ WARMUP = 3
 
 
 def predict(task, answer) -> tuple[int, float]:
+    """The predicted class index, and the confidence calibration is scored on.
+
+    The backend's own confidence when it reports one, since that is the number a
+    gate reads. von and laya both report one below their top probability.
+    """
     from decide.types import ChoiceAnswer
 
     if isinstance(answer, ChoiceAnswer):
-        return list(task.classes).index(answer.choice), max(answer.probabilities.values())
-    positive = answer.noul >= 0.5
-    return (1 if positive else 0), max(answer.noul, 1 - answer.noul)
+        index = list(task.classes).index(answer.choice)
+        computed = max(answer.probabilities.values())
+    else:
+        index = 1 if answer.noul >= 0.5 else 0
+        computed = max(answer.noul, 1 - answer.noul)
+    return index, computed if answer.confidence is None else answer.confidence
 
 
 def run(task, system, n: int) -> list[dict]:

@@ -16,7 +16,7 @@ This measures them the same way, on the same rows, on one machine.
 |---|---|
 | Accuracy | fraction of rows where the answer matched the label |
 | Macro F1 | so a system that favours one class cannot hide behind accuracy |
-| ECE | expected calibration error: the gap between stated confidence and how often that confidence is right |
+| ECE | expected calibration error: the gap between stated confidence and how often that confidence is right. Scored on the confidence the system reports, which for a `choice` is not the top probability; systems that report none are scored on the top probability |
 | Latency | p50 and p95 per decision, measured in the client |
 | Failures | rows where no typed answer came back at all |
 
@@ -48,7 +48,7 @@ unless the options are named, which is the defect at the bottom of this page.
 ## Results
 
 150 rows per task, Apple M4 with 32 GB, 17 October 2026, on the current release
-of everything: pydecide 0.2.8, laya 0.4.9, laya-mlx 0.4.0, von-sdk 1.3.7,
+of everything: pydecide 0.2.10, laya 0.4.9, laya-mlx 0.4.0, von-sdk 1.3.7,
 sentence-transformers 6.1.0, ollama llama3.2:1b. The HTTP servers were measured
 with nothing else running, then stopped before the in-process systems ran, so no
 row is competing with another for the machine. Raw per-row output is in
@@ -58,25 +58,25 @@ row is competing with another for the machine. Raw per-row output is in
 
 | system | params | accuracy | macro F1 | ECE | p50 ms | p95 ms | failures |
 |---|---|---|---|---|---|---|---|
-| Laya 0.4.9 (laya-serve) | 421M | **0.953** | 0.953 | **0.028** | 108.0 | 139.9 | 0 |
-| Laya English (MLX) | 421M | **0.953** | 0.953 | **0.028** | 33.9 | 37.9 | 0 |
-| Laya typed-decisions (MLX) | 421M | **0.953** | 0.953 | 0.126 | 34.9 | 39.6 | 0 |
-| Laya multilingual (MLX) | 322M | 0.920 | 0.921 | 0.072 | **13.9** | 15.8 | 0 |
-| Von 1.3.7 | 395M | 0.913 | 0.914 | 0.230 | 121.4 | 181.4 | 0 |
-| ms-marco MiniLM reranker | 22.7M | 0.393 | 0.326 | 0.078 | 10.4 | 16.2 | 0 |
-| Llama 3.2 1B via ollama | 1.2B | n/a | n/a | n/a | 1432.5 | 4845.6 | **150** |
+| Laya 0.4.9 (laya-serve) | 421M | **0.953** | 0.953 | 0.106 | 142.0 | 222.1 | 0 |
+| Laya English (MLX) | 421M | **0.953** | 0.953 | 0.106 | 39.0 | 46.8 | 0 |
+| Laya typed-decisions (MLX) | 421M | **0.953** | 0.953 | 0.365 | 37.8 | 44.1 | 0 |
+| Laya multilingual (MLX) | 322M | 0.920 | 0.921 | **0.047** | **15.0** | 17.1 | 0 |
+| Von 1.3.7 | 395M | 0.913 | 0.914 | 0.336 | 140.8 | 202.8 | 0 |
+| ms-marco MiniLM reranker | 22.7M | 0.393 | 0.326 | 0.078 | 11.6 | 16.3 | 0 |
+| Llama 3.2 1B via ollama | 1.2B | n/a | n/a | n/a | 1613.4 | 5411.5 | **150** |
 
 ### sst2, a yes/no Noul with the options unnamed
 
 | system | params | accuracy | macro F1 | ECE | p50 ms | p95 ms | failures |
 |---|---|---|---|---|---|---|---|
-| Laya typed-decisions (MLX) | 421M | **0.847** | 0.846 | 0.143 | 23.8 | 35.5 | 0 |
-| Von 1.3.7 | 395M | **0.847** | 0.846 | **0.024** | 238.4 | 287.0 | 0 |
-| Laya English (MLX) | 421M | 0.833 | 0.833 | 0.053 | 23.8 | 35.2 | 0 |
-| Laya 0.4.9 (laya-serve) | 421M | 0.807 | 0.805 | 0.058 | 113.0 | 139.3 | 0 |
-| Laya multilingual (MLX) | 322M | 0.527 | 0.425 | 0.373 | **10.0** | 14.2 | 0 |
-| ms-marco MiniLM reranker | 22.7M | 0.473 | 0.421 | 0.448 | 5.4 | 7.1 | 0 |
-| Llama 3.2 1B via ollama | 1.2B | 0.840 | 0.781 | 0.240 | 514.3 | 2807.8 | **125** |
+| Laya typed-decisions (MLX) | 421M | **0.847** | 0.846 | 0.143 | 27.0 | 40.1 | 0 |
+| Von 1.3.7 | 395M | **0.847** | 0.846 | **0.024** | 219.8 | 249.7 | 0 |
+| Laya English (MLX) | 421M | 0.833 | 0.833 | 0.053 | 28.3 | 42.1 | 0 |
+| Laya 0.4.9 (laya-serve) | 421M | 0.807 | 0.805 | 0.058 | 99.6 | 123.3 | 0 |
+| Laya multilingual (MLX) | 322M | 0.527 | 0.425 | 0.373 | **12.5** | 17.0 | 0 |
+| ms-marco MiniLM reranker | 22.7M | 0.473 | 0.421 | 0.448 | 5.9 | 9.1 | 0 |
+| Llama 3.2 1B via ollama | 1.2B | 0.840 | 0.781 | 0.240 | 551.8 | 3066.4 | **125** |
 
 Llama's 0.840 is 21 right out of the 25 rows that came back at all.
 
@@ -84,13 +84,13 @@ Llama's 0.840 is 21 right out of the 25 rows that came back at all.
 
 | system | params | accuracy | macro F1 | ECE | p50 ms | p95 ms | failures |
 |---|---|---|---|---|---|---|---|
-| Laya typed-decisions (MLX) | 421M | **0.907** | 0.907 | 0.091 | 23.9 | 35.5 | 0 |
-| Von 1.3.7 | 395M | 0.900 | 0.900 | 0.077 | 222.9 | 255.4 | 0 |
-| Laya English (MLX) | 421M | 0.887 | 0.887 | **0.049** | 23.7 | 35.6 | 0 |
-| Laya 0.4.9 (laya-serve) | 421M | 0.873 | 0.873 | 0.059 | 108.9 | 135.9 | 0 |
-| Laya multilingual (MLX) | 322M | 0.853 | 0.853 | 0.103 | **10.5** | 14.9 | 0 |
+| Laya typed-decisions (MLX) | 421M | **0.907** | 0.907 | 0.091 | 24.1 | 36.5 | 0 |
+| Von 1.3.7 | 395M | 0.900 | 0.900 | 0.077 | 219.4 | 239.5 | 0 |
+| Laya English (MLX) | 421M | 0.887 | 0.887 | **0.049** | 22.1 | 34.3 | 0 |
+| Laya 0.4.9 (laya-serve) | 421M | 0.873 | 0.873 | 0.059 | 100.1 | 123.1 | 0 |
+| Laya multilingual (MLX) | 322M | 0.853 | 0.853 | 0.103 | **10.0** | 14.3 | 0 |
 | ms-marco MiniLM reranker | 22.7M | n/a | n/a | n/a | n/a | n/a | **150** |
-| Llama 3.2 1B via ollama | 1.2B | n/a | n/a | n/a | 567.2 | 6023.4 | **149** |
+| Llama 3.2 1B via ollama | 1.2B | n/a | n/a | n/a | 483.7 | 5066.3 | **149** |
 
 The reranker's 150 failures are refusals, not errors: a cross-encoder scores a
 query against a document and has nowhere to put an option's name, so the client
@@ -117,12 +117,35 @@ word for word goes from 0.000 to 0.979 when the names are added.
 bert-base land around 0.94 to 0.95 on this test set, and three Laya checkpoints
 score 0.953 without being trained on it.
 
-**Accuracy and calibration do not travel together.** Those three Laya
-checkpoints tie exactly on ag_news accuracy and spread 0.028 to 0.126 on
-calibration error, a factor of four and a half for the same answers. Von is four
-points behind on ag_news accuracy with an order of magnitude worse calibration,
-0.230, then turns around and posts the best calibration here on sst2, 0.024. If
-you gate, cascade or threshold on these probabilities, the accuracy column is
+**Both encoders are under-confident on a four-way choice.** Von reports 0.578 on
+average while answering 0.913 of the rows correctly, and `laya-serve` reports
+0.847 while answering 0.953. Von's reliability, by bin:
+
+| von reports | rows | actually right |
+|---|---|---|
+| below 0.60 | 36 | 0.806 |
+| 0.60 to 0.70 | 43 | 0.953 |
+| 0.70 to 0.80 | 45 | 0.956 |
+| 0.80 to 0.90 | 26 | 0.923 |
+
+A gate at 0.8 escalates 79 of 150 questions it already answered correctly. The
+usual worry about a decision model is confident wrong answers; here the cost
+runs the other way.
+
+**The confidence a system reports is not its top probability.** On one ag_news
+story von reports 0.877 against a top probability of 0.9077, and laya reports
+0.906 against 0.9779. Both numbers are in every response, and which one you
+score changes the column: `laya-serve` on ag_news is 0.106 against the reported
+confidence and 0.028 against the top probability. This table scores the reported
+one, because that is the number a gate reads.
+
+**Accuracy and calibration do not travel together.** The three Laya checkpoints
+tie exactly on ag_news accuracy and spread 0.047 to 0.365 on calibration error,
+a factor of eight for the same answers. Von is four points behind on ag_news
+accuracy with 0.336, then posts the best calibration here on sst2, 0.024. Which
+checkpoint is best calibrated also depends on the task: multilingual wins on the
+four-way choice at 0.047, English wins on both yes/no tasks at 0.053 and 0.049.
+If you gate, cascade or threshold on these probabilities, the accuracy column is
 not the column to read.
 
 **The multilingual checkpoint's yes/no weakness was mostly the option names.**
@@ -260,14 +283,18 @@ that protocol. Anything else needs a backend in the client instead.
 ## Method notes
 
 The harness drives every system through one client,
-[pydecide](https://github.com/gopaljigaur/decide) 0.2.8, so the request shape,
+[pydecide](https://github.com/gopaljigaur/decide) 0.2.10, so the request shape,
 parsing and timing are identical across systems and no result depends on a
 vendor SDK. That client is mine, which is a conflict worth stating: it is used
 here as plumbing, it is not one of the systems being measured, and swapping it
 out would not change which model answers a question correctly. One place it
 does decide an outcome: a backend that cannot carry an option's name refuses
 the question instead of answering with the name dropped, which is why the
-reranker shows 150 failures on `sst2_named` and no accuracy.
+reranker shows 150 failures on `sst2_named` and no accuracy. It also decides
+which confidence the ECE column scores, by reporting the backend's own when
+there is one; 0.2.9 and earlier reported the top probability for a `Choice`,
+which is why the ag_news ECE column here differs from a run on an older
+release.
 
 ## Licence
 
